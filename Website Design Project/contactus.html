@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Pristine College</title>
+        <link rel="stylesheet" href="collegewebsite.css">
+        <link rel="icon" href="images/collegelogo.jpg" type="image/icon type">
+        <script src="https://kit.fontawesome.com/464a299735.js" crossorigin="anonymous"></script>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>   
+    </head>
+<body>
+
+        <!--BUTTON LINK-->
+
+        <section class="contactuspage">
+                <nav>
+                    <a href="collegewebsite.html"><img src="images/collegelogo.jpg"></a>
+                    <div class="navlist" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="collegewebsite.html" target="_self"><i class="fa-solid fa-house"></i> HOME</a></li>
+                            <li><a href="aboutus.html" target="_self"><i class="fa-solid fa-circle-info"></i> ABOUT US</a></li>
+                            <li><a href="programme.html" target="_self"><i class="fa-solid fa-book"></i> ACADEMIC</a></li>
+                            <li><a href="apply.html" target="_self"><i class="fa-solid fa-envelope"></i> APPLY NOW</a></li>
+                            <li><a href="contactus.html" target="_self"><i class="fa-solid fa-address-book"></i> CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+                <h1>Contact Us</h1>
+            </section>
+<!--Google Map-->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.354417987809!2d103.71417725080634!3d1.552138261317742!2m3!1f0!2f0!3f0!
+        3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da721d58134059%3A0xd5736443f4925206!2sJalan%20Kempas%20Indah%20Utama%2C%2081300%20Johor%20Bahru%2C%20Joh
+        or!5e0!3m2!1sen!2smy!4v1678307794793!5m2!1sen!2smy" width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+    </section>
+
+<!--Contact Us Form-->
+
+    <section class="contactus">
+            <div class="contact-col">
+                <p>SEND US A MESSAGE</p><br><br><br><br>
+                <form action="">
+                    <p>Name <b id="numbering">*</b><br>
+                    <input type="text" placeholder="Please Enter Your Name" required id="formlengthforcontactus">
+                    <br><br>
+                    Email Address <b id="numbering">*</b><br>
+                    <input type="email" placeholder="Please Enter Your Email" required id="formlengthforcontactus">
+                    <br><br>
+                    Enquiry Message <b id="numbering">*</b><br>
+                    <textarea rows=5 cols=102 name=address placeholder="Please Enter Your Message" required></textarea></p>
+                    <br><br>
+                    <button type="submit" class="contact-col button">Send</button>
+                </form>
+                </div>
+                </div>
+
+<!--Contact Information-->
+
+                <div class="contactlist">
+                <div class="contactinfo">    
+                        <h1>CONTACT INFORMATION</h1><br><br>
+                        <p>Feel free to drop us your thoughts or suggestions for our improvement.<br>We appreciate your comments.<br><br>
+                        <b>Operating Hours</b><br>
+                        Mondays - Fridays, 8.30am to 5.30pm<br>
+                        Saturdays, 8.30am to 1.30pm<br>
+                        Admissions office will be closed on Sundays and Public Holidays<br><br>
+                        Location of Our University:<br>
+                        Jalan Kempas Indah Utama, 81300 Johor Bahru, Johor<br><br>
+                        Number To Contact Us:<br>
+                        603 5638 7176 / 7491 8622<br><br>
+                        Our Email Address:<br>
+                        info@pristine.edu.my</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Script For Mobile onclick-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right =" 0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+  </script>
+
+<!-- --- Footer -------->
+
+<div class="footer">
+    <p2><b>Pristine College, Johor Bahru</b>
+        <br>Jalan Kempas Indah Utama<br>
+        81300 Johor Bahru, Malaysia.
+        <br><br>
+        Tel: 603 5638 7176 / 7491 8622<br>
+        Email: info@pristine.edu.my
+        <br><br>
+        <b>FOLLOW US ON</b>
+        <br>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <br><br>
+        Copyright © 2023 Pristine College (200401015440 (653943-A)) (DK265-01(W)). All Rights Reserved.
+    </p2>
+</body>
+</html>

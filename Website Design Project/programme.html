@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Pristine College</title>
+        <link rel="stylesheet" href="collegewebsite.css">
+        <link rel="icon" href="images/collegelogo.jpg" type="image/icon type">
+        <script src="https://kit.fontawesome.com/464a299735.js" crossorigin="anonymous"></script>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>   
+    </head>
+<body>
+
+<!--BUTTON LINK-->
+
+<section class="programmespage">
+        <nav>
+            <a href="collegewebsite.html"><img src="images/collegelogo.jpg"></a>
+            <div class="navlist" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="collegewebsite.html" target="_self"><i class="fa-solid fa-house"></i> HOME</a></li>
+                    <li><a href="aboutus.html" target="_self"><i class="fa-solid fa-circle-info"></i> ABOUT US</a></li>
+                    <li><a href="programme.html" target="_self"><i class="fa-solid fa-book"></i> ACADEMIC</a></li>
+                    <li><a href="apply.html" target="_self"><i class="fa-solid fa-envelope"></i> APPLY NOW</a></li>
+                    <li><a href="contactus.html" target="_self"><i class="fa-solid fa-address-book"></i> CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Programme</h1>
+    </section>
+
+
+    <!--Programme page-->
+    
+    <section class="programme">
+        <br>
+     <h1 id="titleforprogramme">LIVE, LEARN AND CONNECT AT PRISTINE COLLEGE</h1>
+     <br>
+     <p id="titleforprogramme">Pristine is committed to provide the best academic, research and outreach programs to enhance your life and prepares students to meet<br>
+        challenges and embrace the opportunities they will encounter in today’s interdependent world. We are proud to welcome you to Pristine<br>
+        and look forward to helping you thrive in our beautiful campus and world-class university.</p>
+
+     <div class="row">
+        <div class="programmelist1">
+            <h3>DEGREE PROGRAMMES</h3>
+            <p>Further information about the structure<br>
+            of our full-time bachelor’s degree<br>
+            programmes.</p>
+        </div>
+        <div class="programmelist2">
+            <h3>POSTGRADUATE PROGRAMMES</h3>
+            <p>We offer various research-related<br>
+            postgraduate programmes for those who<br>
+            have passion to go further.</p>
+        </div>
+        <div class="programmelist3">
+            <h3>DIPLOMA, EXECUTIVE & PART-TIME PROGRAMMES</h3>
+            <p>Our PristineSpace offers broad range of<br> 
+            diplomas, part-time degree and executive<br>
+            programmes.</p>
+        </div>
+     </div>
+    </section>
+
+    <hr class="accessory"><br>
+
+<section id="course" class="course">
+    <h1 id="titleforprogramme">PROGRAMME OFFERED</h1>
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <i class="fa-solid fa-bug-slash"></i>
+            <h3>Computer Science</h3>
+            <p>Computer science focuses on the<br>
+            development and testing of software and<br>
+            software systems. It involves working with<br>
+            mathematical models data analysis and<br>
+            security, algorithms, and computational theory.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>Engineering & Technology</h3>
+            <p>Engineering and Technology is a broad set<br>
+                of disciplines that deal with everything<br>
+                connected to the design, manufacture,<br>
+                and maintenance of infrastructure, devices,<br>
+                tools, and information systems used by<br>
+                people on a daily basis.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-city"></i>
+            <h3>Engineering - Civil & Structural</h3>
+            <p>Civil engineers design and maintain<br>
+                structures like public and private buildings,<br>
+                water systems, airports and roads. Structural engineers analyze, design, build and<br>
+                maintain the structures and materials that<br>
+                counteract or reinforce loads.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <h3>Architecture/Built Environment Engineering</h3>
+            <p>The built environment touches all aspects of<br>
+                our lives, encompassing the buildings we<br>
+                live in, the distribution systems that provide<br>
+                us with water and electricity, and the roads,<br>
+                bridges, and transportation systems we use<br>
+                to get from place to place.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-computer"></i>
+            <h3>Information Technology</h3>
+            <p>Information technology is building<br>
+                communications networks for a company,<br>
+                safeguarding data and information,<br>
+                creating and administering databases,<br>
+                helping employees troubleshoot problems<br>
+                with their computers or mobile devices, or<br>
+                doing a range of other work to ensure the<br>
+                efficiency and security.</p>
+        </div>
+    </div>
+</section>
+
+
+<!--Script For Mobile onclick-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right =" 0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+  </script>
+
+<!-- --- Footer -------->
+
+<div class="footer">
+    <p2><b>Pristine College, Johor Bahru</b>
+        <br>Jalan Kempas Indah Utama<br>
+        81300 Johor Bahru, Malaysia.
+        <br><br>
+        Tel: 603 5638 7176 / 7491 8622<br>
+        Email: info@pristine.edu.my
+        <br><br>
+        <b>FOLLOW US ON</b>
+        <br>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <br><br>
+        Copyright © 2023 Pristine College (200401015440 (653943-A)) (DK265-01(W)). All Rights Reserved.
+    </p2>
+</body>
+</html>
