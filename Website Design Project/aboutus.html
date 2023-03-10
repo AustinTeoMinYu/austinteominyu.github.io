@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Pristine College</title>
+        <link rel="stylesheet" href="collegewebsite.css">
+        <link rel="icon" href="images/collegelogo.jpg" type="image/icon type">
+        <script src="https://kit.fontawesome.com/464a299735.js" crossorigin="anonymous"></script>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>   
+    </head>
+<body>
+
+    <!--BUTTON LINK-->
+
+    <section class="aboutuspage">
+        <nav>
+            <a href="collegewebsite.html"><img src="images/collegelogo.jpg"></a>
+            <div class="navlist" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="collegewebsite.html" target="_self"><i class="fa-solid fa-house"></i> HOME</a></li>
+                    <li><a href="aboutus.html" target="_self"><i class="fa-solid fa-circle-info"></i> ABOUT US</a></li>
+                    <li><a href="programme.html" target="_self"><i class="fa-solid fa-book"></i> ACADEMIC</a></li>
+                    <li><a href="apply.html" target="_self"><i class="fa-solid fa-envelope"></i> APPLY NOW</a></li>
+                    <li><a href="contactus.html" target="_self"><i class="fa-solid fa-address-book"></i> CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+    <!--Table for Why Study At Pristine?-->
+
+    <section class="studyatpristinecollege">
+        <h1 id=textforstudyat>Why Study At Pristine College?</h1><br><br>
+        <div class="table">
+            <div class="cell" id="textforstudy">
+                <p><b id="numbering">#44</b> Computer Scrience</p>
+                <p><b id="numbering">#74</b>  Engineering & Technology</p>
+                <p><b id="numbering">#51-100</b>  Engineering- Civil & Structural</p>
+                <p><b id="numbering">#51-100</b>  Architecture/Built Environment Engineering</p>
+                <br>
+                <p id="textforstudycolor">QS WORLD UNIVERSITY RANKINGS BY SUBJECTS 2023</p>
+            </div>
+            <div class="middleboxcell" id="middlebox">
+                <p id="numbering">#39</p>
+                in Asia
+                <br><br>
+                <p id="numbering">#5</p>
+                in Malaysia
+                <br><br>
+                <p id="textforstudycolor">QS WORLD UNIVERSITY RANKINGS 2023</p>
+            </div>
+            <div class="cell" id="textforstudy">
+                <p>TOP <b id="numbering">#1</b><br> In Information Technology</p>
+                <br>
+                <p id="textforstudycolor">QS WORLD UNIVERSITY RANKINGS</p>
+                <br>
+                <p><b id="numbering">#1</b> In Malaysia for SDG9-Industry,<br> Innovation and Infrastructure
+                <br><br>
+                <p id="textforstudycolor">THE Impact Ranking</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <hr class="accessory">
+
+<!--About Us-->
+<section class="about-us">
+    <h1 id="textforstudyat">About Pristine College</h1>
+    <div class="about-row">
+        <div class="about-col">
+        <br>
+        <h2>History of Pristine College</h2>
+        <br>
+        <p>Pristine College was founded in 1980 as a small community college with just<br>
+        a few dozen students. Over the years, we have grown into a respected<br>
+        institution with a diverse student body and a range of academic programs.</p>
+        <h2>Mission and Values for Pristine College</h2><br>
+        <p>Mission:<br>
+        Our mission is to provide a transformative educational experience that<br>
+        empowers students to achieve their full potential, confuct innovative research,<br>
+        and server the community.</p>
+        <p>Values:<br>
+        We value academic excellence, diversity and inclusion, intergritry and<br>
+        ethical confuct, community engagement, innovation and creativity, and lifelong<br>
+        learning. We strive to create a welcoming and inclusive community that fosters<br>
+        intellectual curiosity, critical thinking, and personal growth.</p>
+        <br>
+        <p>Thank you for your interest in our college. If you have any questions or need<br>assistance, please don't hesitate to contact us.</p>
+        <a href="contactus.html" class="button2 redborder" target="_self">Contact Us</a>
+    </div>
+    <div class="about-col">
+        <img src="images/collegepeeps.jpeg">
+    </div>
+</section>
+
+<hr class="accessory">
+
+    <!--Table for Students Experience-->
+
+    <section class="studentexperience">
+        <h2 id="textforstudyat">Students Experience</h2>
+        <div class="row">
+        <div class="studexp">
+        <h3 id="titleforexperience">Global Education</h3>
+        <img src="images/globaleducation.png">
+        <p id="textforexperience">Pristine is offering five types of mobility<br>
+        programs which allow Pristine Students to go<br>
+        abroad and join academic programs in<br>
+        universities, institutions or organizations all over the world.</p>
+        </div>
+        <div class="studexp">
+        <h4 id="titleforexperience">Future-Oriented Graduates</h4>
+        <img src="images/futureorientedgraduates.png">
+        <p id="textforexperience">Pristine aims to produce multi-talented<br>
+        graduates by improving the quality of<br>
+        delivery of teaching and learning, and<br>
+        implementing innovative curriculum<br>
+        assessments through data analytics.</p>
+        </div>
+        <div class="studexp">
+        <h5 id="titleforexperience">Alumni Relations</h5>
+        <img src="images/alumnirelations.png">
+        <p id="textforexperience">Our alumni often serve as powerful<br>
+        ambassadors for Pristine brand for years.<br>
+        Alumni Relations team aims to build an<br>
+        engaging alumni community to connect<br>
+        with each other and with the university.</p>
+        </div>
+    </section>
+
+<!--Script For Mobile onclick-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right =" 0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+  </script>
+
+<!-- --- Footer -------->
+
+<div class="footer">
+    <p2><b>Pristine College, Johor Bahru</b>
+        <br>Jalan Kempas Indah Utama<br>
+        81300 Johor Bahru, Malaysia.
+        <br><br>
+        Tel: 603 5638 7176 / 7491 8622<br>
+        Email: info@pristine.edu.my
+        <br><br>
+        <b>FOLLOW US ON</b>
+        <br>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <br><br>
+        Copyright © 2023 Pristine College (200401015440 (653943-A)) (DK265-01(W)). All Rights Reserved.
+    </p2>
+</body>
+</html>
